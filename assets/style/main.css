@@ -81,6 +81,36 @@ html {
   top: 1rem;
 }
 
+.bodyHome .leftAlt1 {
+  width: 49.5%;
+  height: 100vh;
+  background-image: url("../images/tokyo/tokyoAerial.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.bodyHome .leftAlt1 h2 {
+  position: absolute;
+  font-size: 6.4rem;
+  font-family: 'Tall';
+  font-weight: 200;
+  top: 1.5rem;
+  left: 3rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.bodyHome .leftAlt1 h2 a {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.bodyHome .leftAlt1 h2:hover {
+  top: 1rem;
+}
+
 .bodyHome .right {
   width: 49.5%;
   height: 100vh;
@@ -147,6 +177,8 @@ html {
   font-size: 22rem;
   font-family: 'Tall';
   font-weight: 400;
+  position: relative;
+  overflow: hidden;
 }
 
 .bodyHome .right .title .titleName .subTitle {
@@ -162,6 +194,14 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1rem;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+.bodyHome .right .title .titleName .subTitle .sub1 a,
+.bodyHome .right .title .titleName .subTitle .sub2 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .bodyHome .right .title .number {
@@ -210,8 +250,8 @@ html {
 }
 
 .bodyHome .right .nextContainer .next {
-  background-image: url("../images/losAngeles/pexels-sergio-souza-2850438.jpg");
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 25rem;
   width: 20rem;
   border-radius: 10rem 10rem 0 0;
@@ -219,9 +259,59 @@ html {
   margin-right: 2rem;
 }
 
-.bodyHome .right .nextContainer img {
+.bodyHome .right .nextContainer .imgComm {
   height: 38px;
   width: 38px;
   margin-bottom: 3.8rem;
+  cursor: pointer;
+}
+
+.hide {
+  width: 100%;
+  height: 100%;
+  background-color: #161616;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: hideAnimation 1800ms ease-in-out forwards;
+          animation: hideAnimation 1800ms ease-in-out forwards;
+}
+
+@-webkit-keyframes hideAnimation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.hide1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.hide2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.hide3 {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+
+.hideCap {
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
 }
 /*# sourceMappingURL=main.css.map */

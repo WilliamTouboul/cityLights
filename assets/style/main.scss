@@ -78,6 +78,34 @@ html {
         }
     }
 
+    .leftAlt1 {
+        width: 49.5%;
+        height: 100vh;
+        background-image: url('../images/tokyo/tokyoAerial.jpg');
+        background-size: cover;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            font-size: 6.4rem;
+            font-family: 'Tall';
+            font-weight: 200;
+            top: 1.5rem;
+            left: 3rem;
+            transition: all 200ms ease-in-out;
+
+            a {
+                color: $light;
+                text-decoration: none;
+                transition: all 300ms ease-in-out;
+            }
+
+            &:hover {
+                top: 1rem;
+            }
+        }
+    }
+
     .right {
         width: 49.5%;
         height: 100vh;
@@ -118,7 +146,6 @@ html {
             color: $light;
             font-family: 'Inter';
 
-
             .titleName {
                 width: 100%;
                 display: flex;
@@ -133,6 +160,8 @@ html {
                     font-size: 22rem;
                     font-family: 'Tall';
                     font-weight: 400;
+                    position: relative;
+                    overflow: hidden;
                 }
 
                 .subTitle {
@@ -141,6 +170,16 @@ html {
                     flex-direction: row;
                     justify-content: space-between;
                     margin-bottom: 1rem;
+                    cursor: pointer;
+                    margin-top: 0.8rem;
+
+                    .sub1,
+                    .sub2 {
+                        a {
+                            color: $light;
+                            text-decoration: none;
+                        }
+                    }
                 }
             }
 
@@ -176,8 +215,7 @@ html {
             align-items: flex-end;
 
             .next {
-                background-image: url('../images/losAngeles/pexels-sergio-souza-2850438.jpg');
-                background-size: cover;
+                object-fit: cover;
                 height: 25rem;
                 width: 20rem;
                 border-radius: 10rem 10rem 0 0;
@@ -185,10 +223,11 @@ html {
                 margin-right: 2rem;
             }
 
-            img {
+            .imgComm {
                 height: 38px;
                 width: 38px;
                 margin-bottom: 3.8rem;
+                cursor: pointer;
             }
         }
 
@@ -200,3 +239,41 @@ html {
 }
 
 //-End BodyHome
+
+
+.hide {
+    width: 100%;
+    height: 100%;
+    background-color: $dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: hideAnimation 1800ms ease-in-out forwards;
+}
+
+
+@keyframes hideAnimation {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+.hide1 {
+    animation-delay: 1s;
+}
+
+.hide2 {
+    animation-delay: 2s;
+}
+
+.hide3 {
+    animation-delay: 2.8s;
+}
+
+.hideCap {
+    animation-delay: 3.5s;
+}
