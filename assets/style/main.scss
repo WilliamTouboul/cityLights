@@ -1,0 +1,202 @@
+/* -------------------------------------------------------------------------- */
+/*                                     VAR                                    */
+/* -------------------------------------------------------------------------- */
+$dark : #161616;
+$light : #ffffff;
+$littleMargin : 40px;
+$bigMargin : 150px;
+
+/* -------------------------------------------------------------------------- */
+/*                                   GENERAL                                  */
+/* -------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    FONTS                                   */
+/* -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Tall';
+    src: url('../fonts/talldark.ttf');
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
+
+.nav_link {
+    font-size: 1.4rem;
+    font-family: 'Inter';
+}
+
+.bodyHome {
+    background-color: $dark;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+
+
+    .left {
+        width: 49.5%;
+        height: 100vh;
+        background-image: url('../images/tokyo/tokyoAerial.jpg');
+        background-size: cover;
+        position: relative;
+
+        h2 {
+            position: absolute;
+            font-size: 6.4rem;
+            font-family: 'Tall';
+            font-weight: 200;
+            top: 1.5rem;
+            left: 3rem;
+            transition: all 200ms ease-in-out;
+
+            a {
+                color: $light;
+                text-decoration: none;
+                transition: all 300ms ease-in-out;
+            }
+
+            &:hover {
+                top: 1rem;
+            }
+        }
+    }
+
+    .right {
+        width: 49.5%;
+        height: 100vh;
+
+        nav {
+            margin-top: 40px;
+            margin-left: 40px;
+
+            ul {
+                list-style: none;
+
+                li {
+                    a {
+                        color: $light;
+                        text-decoration: none;
+                        transition: all 300ms ease-in-out;
+
+                        img {
+                            transition: all 150ms ease-in-out;
+                        }
+
+                        &:hover {
+                            img {
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .title {
+            display: flex;
+            flex-direction: row;
+            width: 55.5rem;
+            margin: auto;
+            margin-top: 15%;
+            color: $light;
+            font-family: 'Inter';
+
+
+            .titleName {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .town {
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+                }
+
+                h1 {
+                    font-size: 22rem;
+                    font-family: 'Tall';
+                    font-weight: 400;
+                }
+
+                .subTitle {
+                    font-size: 1.4rem;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .number {
+                width: 2%;
+            }
+        }
+
+        .captionContainer {
+            width: 55.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: auto;
+
+            .caption {
+                width: 220px;
+                height: auto;
+                font-size: 1.2rem;
+                font-family: "Inter";
+                text-align: justify;
+                color: $light;
+                margin-top: 7rem;
+            }
+        }
+
+        .nextContainer {
+            position: absolute;
+            bottom: 0;
+            right: 6.5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            .next {
+                background-image: url('../images/losAngeles/pexels-sergio-souza-2850438.jpg');
+                background-size: cover;
+                height: 25rem;
+                width: 20rem;
+                border-radius: 10rem 10rem 0 0;
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+
+            img {
+                height: 38px;
+                width: 38px;
+                margin-bottom: 3.8rem;
+            }
+        }
+
+
+
+    }
+
+    //-End Right
+}
+
+//-End BodyHome

@@ -1,0 +1,227 @@
+/* -------------------------------------------------------------------------- */
+/*                                     VAR                                    */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                   GENERAL                                  */
+/* -------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    FONTS                                   */
+/* -------------------------------------------------------------------------- */
+@font-face {
+  font-family: 'Tall';
+  src: url("../fonts/talldark.ttf");
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    MAIN                                    */
+/* -------------------------------------------------------------------------- */
+.nav_link {
+  font-size: 1.4rem;
+  font-family: 'Inter';
+}
+
+.bodyHome {
+  background-color: #161616;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bodyHome .left {
+  width: 49.5%;
+  height: 100vh;
+  background-image: url("../images/tokyo/tokyoAerial.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.bodyHome .left h2 {
+  position: absolute;
+  font-size: 6.4rem;
+  font-family: 'Tall';
+  font-weight: 200;
+  top: 1.5rem;
+  left: 3rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.bodyHome .left h2 a {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.bodyHome .left h2:hover {
+  top: 1rem;
+}
+
+.bodyHome .right {
+  width: 49.5%;
+  height: 100vh;
+}
+
+.bodyHome .right nav {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.bodyHome .right nav ul {
+  list-style: none;
+}
+
+.bodyHome .right nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.bodyHome .right nav ul li a img {
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.bodyHome .right nav ul li a:hover img {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.bodyHome .right .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 55.5rem;
+  margin: auto;
+  margin-top: 15%;
+  color: #ffffff;
+  font-family: 'Inter';
+}
+
+.bodyHome .right .title .titleName {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bodyHome .right .title .titleName .town {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.bodyHome .right .title .titleName h1 {
+  font-size: 22rem;
+  font-family: 'Tall';
+  font-weight: 400;
+}
+
+.bodyHome .right .title .titleName .subTitle {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.bodyHome .right .title .number {
+  width: 2%;
+}
+
+.bodyHome .right .captionContainer {
+  width: 55.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: auto;
+}
+
+.bodyHome .right .captionContainer .caption {
+  width: 220px;
+  height: auto;
+  font-size: 1.2rem;
+  font-family: "Inter";
+  text-align: justify;
+  color: #ffffff;
+  margin-top: 7rem;
+}
+
+.bodyHome .right .nextContainer {
+  position: absolute;
+  bottom: 0;
+  right: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bodyHome .right .nextContainer .next {
+  background-image: url("../images/losAngeles/pexels-sergio-souza-2850438.jpg");
+  background-size: cover;
+  height: 25rem;
+  width: 20rem;
+  border-radius: 10rem 10rem 0 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.bodyHome .right .nextContainer img {
+  height: 38px;
+  width: 38px;
+  margin-bottom: 3.8rem;
+}
+/*# sourceMappingURL=main.css.map */
